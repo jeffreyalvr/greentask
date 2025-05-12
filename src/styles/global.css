@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Madimi One";
+  src: url("../assets/fonts/MadimiOne.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat.ttf");
+}
+
+:root {
+  --accent-primary: #52796f;
+  --accent-opaque: #84a98c;
+  --fg-dark: #5b5b5b;
+  --fg-light: #838383;
+  --border-light: #d9d9d9;
+  --border-dark: #c2c2c2;
+  --bg-color: #f2f2f2;
+  --sidebar-bg: #d9d9d9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  color: #fff;
+  background: var(--accent-opaque);
+  -webkit-text-fill-color: #fff !important;
+}
+
+html,
+body {
+  background: var(--bg-color);
+  min-height: 100%;
+  height: 100dvh;
+  font-family: "Montserrat", "Madimi One", sans-serif;
+}
+
+p,
+span {
+  color: var(--fg-dark);
+}
