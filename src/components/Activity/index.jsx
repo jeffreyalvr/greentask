@@ -1,5 +1,7 @@
+import Section from "../Section";
+
 const Activity = () => {
-  return <h1>Atividade</h1>;
+  return <Section title="Atividade">oi</Section>;
 };
 
 export default Activity;

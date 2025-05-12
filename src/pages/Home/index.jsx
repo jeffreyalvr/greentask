@@ -1,14 +1,14 @@
 import Sidebar from "../../components/Sidebar";
-import TaskSection from "../../components/TaskSection";
 import Statistics from "../../components/Statistics";
+import Activity from "../../components/Activity";
 
 const Home = () => {
   return (
     <div className="flex h-screen">
       <Sidebar />
-      <div className="flex flex-col flex-1 gap-10 p-10">
+      <div className="flex flex-col flex-1 px-10">
         <Statistics />
-        <TaskSection />
+        <Activity />
       </div>
     </div>
   );

@@ -43,3 +43,7 @@ p,
 span {
   color: var(--fg-dark);
 }
+
+section:last-of-type {
+  border-bottom: none;
+}
