@@ -5,7 +5,10 @@ const StatisticsItem = ({ task, percentage }) => {
         <i className="inline-block w-[15px] h-[15px] bg-gray-300 rounded-full"></i>
         <span className="uppercase">{task}</span>
       </div>
-      <div className="text-[var(--fg-subtle)] border-l-1 border-[var(--border-light)] pl-4">
+      <div
+        className="text-[var(--fg-subtle)] border-l-1 border-[var(--border-light)] pl-4"
+        title="Tempo aplicado no mês"
+      >
         {percentage}%
       </div>
     </div>

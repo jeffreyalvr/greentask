@@ -11,7 +11,7 @@ const Sidebar = () => {
           DASHBOARD
         </a>
         <a href="#" className="text-[var(--fg-dark)] font-semibold">
-          TIMELINE
+          HISTÓRICO
         </a>
         <a href="#" className="text-[var(--fg-dark)] font-semibold">
           TAGS
