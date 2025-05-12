@@ -15,10 +15,12 @@
   --accent-opaque: #84a98c;
   --fg-dark: #5b5b5b;
   --fg-light: #838383;
-  --border-light: #d9d9d9;
+  --fg-subtle: #ababab;
   --border-dark: #c2c2c2;
+  --border-light: #d9d9d9;
   --bg-color: #f2f2f2;
   --sidebar-bg: #d9d9d9;
+  --activity-item-color: #fff;
 }
 
 * {
