@@ -71,6 +71,7 @@ const TaskSection = () => {
                 onClick={() => toggleTimeTable()}
                 texto="X"
                 title="Fechar"
+                special
               />
             </div>
           ) : (
@@ -89,6 +90,7 @@ const TaskSection = () => {
                 texto="+"
                 toggled={!isQuickValue}
                 title="Expandir opções"
+                special
               />
             </div>
           )}
