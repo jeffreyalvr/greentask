@@ -29,6 +29,17 @@ const StatisticsMenu = () => {
 
   return (
     <div className="flex gap-4 w-full h-auto p-5 mt-15 bg-[var(--sidebar-bg)] rounded-2xl">
+      <select className="px-7 py-2 rounded-4xl border-0 bg-white text-[var(--fg-light)] font-semibold uppercase">
+        <option>2025</option>
+        <option>2024</option>
+        <option>2023</option>
+        <option>2022</option>
+        <option>2021</option>
+        <option>2020</option>
+      </select>
+
+      <div className="inline-block w-2 h-full border-r-2 border-[var(--border-dark)]"></div>
+
       {periods.map((period) => (
         <button
           className={`w-max px-7 py-2 rounded-4xl font-semibold uppercase cursor-pointer hover:bg-[var(--accent-opaque)] hover:text-white ${
@@ -42,17 +53,6 @@ const StatisticsMenu = () => {
           {period.name}
         </button>
       ))}
-
-      <div className="inline-block w-2 h-full border-r-2 border-[var(--border-dark)]"></div>
-
-      <select className="px-7 py-2 rounded-4xl border-0 bg-white text-[var(--fg-light)] font-semibold uppercase">
-        <option>2025</option>
-        <option>2024</option>
-        <option>2023</option>
-        <option>2022</option>
-        <option>2021</option>
-        <option>2020</option>
-      </select>
     </div>
   );
 };
