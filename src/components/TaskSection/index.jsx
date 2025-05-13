@@ -99,7 +99,7 @@ const TaskSection = () => {
 
         <div className="inline-block h-2 border-dashed border-b-2 border-[var(--border-light)]"></div>
         <div className="w-full flex flex-col justify-center items-center gap-2">
-          <button className="w-max px-10 py-4 rounded-4xl text-white bg-[var(--accent-opaque)] uppercase cursor-pointer hover:bg-[var(--accent-primary)]">
+          <button className="w-max px-10 py-4 rounded-4xl text-white font-semibold bg-[var(--accent-opaque)] uppercase cursor-pointer hover:bg-[var(--accent-primary)]">
             iniciar | {selected}"
           </button>
         </div>

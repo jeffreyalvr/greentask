@@ -1,7 +1,9 @@
 const Header = () => {
   return (
-    <header className="flex flex-col w-full py-10 items-center border-b-2 border-dashed border-[var(--border-light)]">
-      header
+    <header className="flex w-full h-[130px] px-10 items-center justify-center bg-[var(--sidebar-bg)]">
+      <h1 className="font-bold text-5xl text-[var(--accent-primary)]">
+        greentask.
+      </h1>
     </header>
   );
 };
