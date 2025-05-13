@@ -1,4 +1,4 @@
-const Section = ({ title, borderless, width, children }) => {
+const Section = ({ title, borderless, children }) => {
   return (
     <section
       className={`flex flex-col py-20 gap-8 ${
