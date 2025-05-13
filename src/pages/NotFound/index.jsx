@@ -1,7 +1,7 @@
 import Header from "../../components/Header";
 import { Link } from "react-router-dom";
 
-import warning_icon from "../../assets/icons/warning.png";
+import warning_icon from "../../assets/icons/svg/alert.svg";
 
 const NotFound = () => {
   return (
