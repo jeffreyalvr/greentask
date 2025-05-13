@@ -14,7 +14,7 @@ const TaskSection = () => {
   return (
     <Section title="Nova tarefa" width={500}>
       <div className="flex flex-col gap-10 w-full h-auto px-10 py-10 bg-white rounded-2xl">
-        <div className="w-[500px] flex flex-col justify-center items-center gap-2">
+        <div className="w-[500px] flex flex-col justify-center items-center gap-4">
           <h1 className="text-xl text-[var(--accent-primary)] font-semibold">
             TAREFA:
           </h1>
@@ -28,9 +28,13 @@ const TaskSection = () => {
             <option>workout</option>
           </select>
         </div>
-        <div className="w-[500px] flex flex-col justify-center items-center gap-2">
-          <h1 className="text-xl text-[var(--accent-primary)] font-semibold">
+        <div className="inline-block h-2 border-dashed border-b-2 border-[var(--border-light)]"></div>
+        <div className="w-[500px] flex flex-col items-center gap-4">
+          <h1 className="flex flex-col items-center text-xl text-[var(--accent-primary)] font-semibold">
             TEMPO TOTAL:
+            <span className="text-xs text-[var(--fg-subtle)]">
+              (exibição em minutos)
+            </span>
           </h1>
           <div className="w-full pb-4 flex flex-row gap-4 overflow-x-auto">
             {timeValues.map((value) => (
@@ -43,6 +47,7 @@ const TaskSection = () => {
             ))}
           </div>
         </div>
+        <div className="inline-block h-2 border-dashed border-b-2 border-[var(--border-light)]"></div>
         <div className="w-full flex flex-col justify-center items-center gap-2">
           <button className="w-max px-10 py-4 rounded-4xl text-white bg-[var(--accent-opaque)] uppercase cursor-pointer hover:bg-[var(--accent-primary)]">
             iniciar

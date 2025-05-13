@@ -41,11 +41,6 @@ body {
   font-family: "Montserrat", "Madimi One", sans-serif;
 }
 
-p,
-span {
-  color: var(--fg-dark);
-}
-
 section:last-of-type {
   border-bottom: none;
 }
