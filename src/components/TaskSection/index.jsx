@@ -19,6 +19,7 @@ const TaskSection = () => {
   const isQuickValue = quickValues.some((q) => q.time === selected);
 
   const selectTime = (value) => {
+    if (value === selected) return;
     setSelected(value);
   };
 
