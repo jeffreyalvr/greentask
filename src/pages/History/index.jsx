@@ -1,15 +1,13 @@
 import Sidebar from "../../components/Sidebar";
-import TaskSection from "../../components/TaskSection";
+import Statistics from "../../components/Statistics";
 import Activity from "../../components/Activity";
 
-const Home = () => {
+const History = () => {
   return (
     <div className="flex h-screen">
       <Sidebar />
       <main className="flex flex-col flex-1 px-10">
-        <div className="flex gap-30">
-          <TaskSection borderless />
-        </div>
+        <Statistics />
         <div className="inline-block h-2 border-dashed border-b-2 border-[var(--border-light)]"></div>
         <Activity />
       </main>
@@ -17,4 +15,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default History;

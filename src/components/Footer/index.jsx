@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="w-full flex flex-col py-4 border-t-2 border-[var(--border-dark)]">
+    <footer className="w-full flex flex-col py-4 border-dashed border-t-2 border-[var(--border-dark)]">
       <span>
         Feito por{" "}
         <a

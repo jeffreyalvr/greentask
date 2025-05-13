@@ -23,16 +23,6 @@ const Statistics = () => {
             <StatisticsItem task="Tarefa 9" percentage={33} />
             <StatisticsItem task="Tarefa 10" percentage={33} />
             <StatisticsItem task="Tarefa 11" percentage={33} />
-            <StatisticsItem task="Tarefa 12" percentage={33} />
-            <StatisticsItem task="Tarefa 13" percentage={33} />
-            <StatisticsItem task="Tarefa 14" percentage={33} />
-            <StatisticsItem task="Tarefa 15" percentage={33} />
-            <StatisticsItem task="Tarefa 15" percentage={33} />
-            <StatisticsItem task="Tarefa 15" percentage={33} />
-            <StatisticsItem task="Tarefa 15" percentage={33} />
-            <StatisticsItem task="Tarefa 15" percentage={33} />
-            <StatisticsItem task="Tarefa 15" percentage={33} />
-            <StatisticsItem task="Tarefa 15" percentage={33} />
           </div>
         </div>
       </div>
