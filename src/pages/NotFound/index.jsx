@@ -11,7 +11,7 @@ const NotFound = () => {
         <i className="w-[80px] h-[80px] border-0">
           <img className="w-full h-full" src={warning_icon} />
         </i>
-        <span className="text-2xl font-bold text-[var(--fg-light)] dark:text-[var(--fg-dark)]">
+        <span className="text-2xl font-semibold text-[var(--fg-light)] dark:text-[var(--fg-dark)]">
           A página procurada não existe.
         </span>
         <div className="inline-block w-full h-2 border-dashed border-b-2 border-[var(--border-light)]"></div>
