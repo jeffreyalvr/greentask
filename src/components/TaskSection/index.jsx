@@ -2,6 +2,9 @@ import { useState } from "react";
 import Button from "../Button";
 import Section from "../Section";
 
+import close_icon from "../../assets/icons/close.png";
+import arrow_icon from "../../assets/icons/arrow.png";
+
 const TaskSection = () => {
   const [timeTableVisible, setTimeTableVisible] = useState(false);
   const [selected, setSelected] = useState(5);
@@ -70,8 +73,9 @@ const TaskSection = () => {
 
               <Button
                 onClick={() => toggleTimeTable()}
-                texto="X"
+                image={close_icon}
                 title="Fechar"
+                texto="X"
                 special
               />
             </div>
@@ -88,9 +92,10 @@ const TaskSection = () => {
 
               <Button
                 onClick={() => toggleTimeTable()}
-                texto="+"
+                image={arrow_icon}
                 toggled={!isQuickValue}
                 title="Expandir opções"
+                texto="+"
                 special
               />
             </div>
