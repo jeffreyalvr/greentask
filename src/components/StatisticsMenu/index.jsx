@@ -10,7 +10,7 @@ const StatisticsMenu = () => {
 
   const [selected, setSelected] = useState(0);
   const [timePeriod, setTimePeriod] = useState(0);
-  const [year, setYear] = useState("2023");
+  const [year, setYear] = useState("2025");
 
   const currentYear = new Date().getFullYear().toString();
 
@@ -33,7 +33,7 @@ const StatisticsMenu = () => {
   return (
     <div className="flex gap-4 w-full h-auto p-5 mt-15 bg-[var(--sidebar-bg)] rounded-2xl">
       <select
-        className="px-7 py-2 rounded-4xl border-0 bg-white text-[var(--fg-light)] font-semibold uppercase"
+        className="px-7 py-2 h-[40px] rounded-4xl border-0 bg-white text-[var(--fg-light)] font-semibold uppercase"
         onChange={handleYear}
         value={year}
       >
