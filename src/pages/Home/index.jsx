@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="flex h-screen">
       <Sidebar />
-      <main className="flex flex-col flex-1 px-10">
+      <main className="flex flex-col flex-1 h-fit px-10">
         <div className="flex gap-30">
           <TaskSection borderless />
         </div>

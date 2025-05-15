@@ -8,20 +8,19 @@ const days = [
   { name: "domingo", value: 40 },
 ];
 
-const maxBarHeight = 350;
+const maxBarHeight = 250;
 const minBarHeight = 8;
 const maxValue = Math.max(...days.map((d) => d.value));
 
 const StatisticsDailyChart = () => {
   return (
-    <div className="flex flex-col gap-10 w-auto h-auto px-10 py-10 bg-white rounded-2xl">
+    <div className="flex flex-col gap-10 w-[650px] h-auto px-10 py-10 bg-white rounded-2xl">
       <span className="pb-4 text-xl text-[var(--fg-light)] font-semibold border-b-2 border-dashed border-b-[var(--border-light)]">
         Total de horas na semana
       </span>
 
-      <div className="h-auto flex items-end gap-10">
-        {/* Bars */}
-        <div className="flex gap-5 h-full items-end">
+      <div className="h-auto w-auto flex items-end gap-10 justify-center">
+        <div className="flex gap-5 w-auto h-full items-end">
           {days.map((day, i) => (
             <div
               key={i}

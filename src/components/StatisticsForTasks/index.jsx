@@ -2,27 +2,42 @@ import StatisticsChart from "../StatisticsChart";
 import StatisticsItem from "../StatisticsItem";
 
 const StatisticsForTasks = () => {
-  return (
-    <div className="flex flex-col gap-10 w-auto h-auto px-10 py-10 bg-white rounded-2xl">
-      <div className="flex gap-30">
-        <div className="inline-block w-[200px] h-[200px] bg-gray-300 rounded-full overflow-clip">
-          <StatisticsChart />
-        </div>
+  // TODO: variável placeholder
+  const emptyData = false;
 
-        <div className="flex flex-col gap-3">
-          <StatisticsItem task="Tarefa 1" percentage={33} />
-          <StatisticsItem task="Tarefa 2" percentage={33} />
-          <StatisticsItem task="Tarefa 3" percentage={33} />
-          <StatisticsItem task="Tarefa 4" percentage={33} />
-          <StatisticsItem task="Tarefa 5" percentage={33} />
-          <StatisticsItem task="Tarefa 6" percentage={33} />
-          <StatisticsItem task="Tarefa 7" percentage={33} />
-          <StatisticsItem task="Tarefa 8" percentage={33} />
-          <StatisticsItem task="Tarefa 9" percentage={33} />
-          <StatisticsItem task="Tarefa 10" percentage={33} />
-          <StatisticsItem task="Tarefa 11" percentage={33} />
+  return (
+    <div className="flex flex-col gap-10 w-full h-auto px-10 py-10 bg-white rounded-2xl">
+      <span className="pb-4 text-xl text-[var(--fg-light)] font-semibold border-b-2 border-dashed border-b-[var(--border-light)]">
+        Distribuição por tarefa
+      </span>
+
+      {emptyData ? (
+        <div className="flex items-center justify-center py-15">
+          <p className="text-lg text-[var(--fg-light)]">
+            Sem dados para o período.
+          </p>
         </div>
-      </div>
+      ) : (
+        <div className="flex gap-20 h-auto">
+          <div className="inline-block w-[200px] h-[200px] bg-gray-300 rounded-full overflow-clip">
+            <StatisticsChart />
+          </div>
+
+          <div className="grid grid-cols-3 w-full h-full gap-x-15 gap-y-5 auto-rows-min">
+            <StatisticsItem task="Tarefa 1" percentage={33} total_time={45} />
+            <StatisticsItem task="Tarefa 2" percentage={33} total_time={35} />
+            <StatisticsItem task="Tarefa 3" percentage={33} total_time={30} />
+            <StatisticsItem task="Tarefa 4" percentage={33} total_time={30} />
+            <StatisticsItem task="Tarefa 5" percentage={33} total_time={25} />
+            <StatisticsItem task="Tarefa 6" percentage={33} total_time={15} />
+            <StatisticsItem task="Tarefa 7" percentage={33} total_time={15} />
+            <StatisticsItem task="Tarefa 8" percentage={33} total_time={5} />
+            <StatisticsItem task="Tarefa 9" percentage={33} total_time={5} />
+            <StatisticsItem task="Tarefa 10" percentage={33} total_time={5} />
+            <StatisticsItem task="Tarefa 11" percentage={33} total_time={5} />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
