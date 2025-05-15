@@ -1,6 +1,8 @@
 import StatisticsChart from "../StatisticsChart";
 import StatisticsItem from "../StatisticsItem";
 
+import alert_icon from "../../assets/icons/alert.svg";
+
 const StatisticsForTasks = () => {
   // TODO: variável placeholder
   const emptyData = false;
@@ -12,7 +14,10 @@ const StatisticsForTasks = () => {
       </span>
 
       {emptyData ? (
-        <div className="flex items-center justify-center py-15">
+        <div className="flex flex-col items-center justify-center py-15 gap-3">
+          <i className="w-[32px] h-[32px] border-0">
+            <img className="w-full h-full" src={alert_icon} />
+          </i>
           <p className="text-lg text-[var(--fg-light)]">
             Sem dados para o período.
           </p>
