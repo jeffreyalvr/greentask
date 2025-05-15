@@ -2,7 +2,6 @@ import Section from "../Section";
 import StatisticsDailyChart from "../StatisticsDailyChart";
 import StatisticsForTasks from "../StatisticsForTasks";
 import StatisticsMenu from "../StatisticsMenu";
-import Activity from "../Activity";
 
 const Statistics = () => {
   return (
@@ -14,10 +13,6 @@ const Statistics = () => {
           <StatisticsDailyChart />
           <StatisticsForTasks />
         </div>
-
-        <div className="inline-block h-2 border-dashed border-b-2 border-[var(--border-light)]"></div>
-
-        <Activity />
       </Section>
     </>
   );

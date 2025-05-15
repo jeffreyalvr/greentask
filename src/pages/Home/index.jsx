@@ -6,10 +6,8 @@ const Home = () => {
   return (
     <div className="flex h-screen">
       <Sidebar />
-      <main className="flex flex-col flex-1 h-fit px-10">
-        <div className="flex gap-30">
-          <TaskSection borderless />
-        </div>
+      <main className="flex flex-col h-fit px-10">
+        <TaskSection />
         <div className="inline-block h-2 border-dashed border-b-2 border-[var(--border-light)]"></div>
         <Activity />
       </main>
