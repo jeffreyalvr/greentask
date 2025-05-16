@@ -38,7 +38,7 @@ const TagsSection = () => {
           </span>
           <input
             type="text"
-            placeholder="oi"
+            placeholder="Insira um nome aqui..."
             className="w-full h-auto p-3 bg-[var(--activity-item-color)] border-1 border-[var(--border-light)] rounded-md shadow-md"
           />
         </div>
