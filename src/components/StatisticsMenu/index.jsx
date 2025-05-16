@@ -9,11 +9,21 @@ const StatisticsMenu = ({ selectedView, onSelectView }) => {
   ];
 
   const [year, setYear] = useState("2025");
+  const [isCurrentYear, setIsCurrentYear] = useState("2025");
   const currentYear = new Date().getFullYear().toString();
 
   const handleYear = (e) => {
     const value = e.target.value;
     if (year === value) return;
+
+    if (value === currentYear) {
+      setIsCurrentYear(true);
+      onSelectView(0);
+    } else {
+      setIsCurrentYear(false);
+      onSelectView(3);
+    }
+
     setYear(value);
   };
 
@@ -34,11 +44,7 @@ const StatisticsMenu = ({ selectedView, onSelectView }) => {
 
       <div className="inline-block w-2 h-full border-r-2 border-[var(--border-dark)]"></div>
 
-      {year !== currentYear ? (
-        <span className="w-full h-full flex items-center text-md text-[var(--fg-dark)] font-semibold">
-          Exibindo dados do ano {year}
-        </span>
-      ) : (
+      {isCurrentYear ? (
         periods.map((period) => (
           <button
             className={`w-max px-7 py-2 rounded-4xl font-semibold uppercase cursor-pointer hover:bg-[var(--accent-opaque)] hover:text-white ${
@@ -52,6 +58,10 @@ const StatisticsMenu = ({ selectedView, onSelectView }) => {
             {period.name}
           </button>
         ))
+      ) : (
+        <span className="w-full h-full flex items-center text-md text-[var(--fg-dark)] font-semibold">
+          Exibindo dados do ano {year}
+        </span>
       )}
     </div>
   );
