@@ -3,6 +3,7 @@ import { useState } from "react";
 import Section from "../Section";
 import StatisticsWeeklyChart from "../StatisticsWeeklyChart";
 import StatisticsMonthlyChart from "../StatisticsMonthlyChart";
+import StatisticsYearChart from "../StatisticsYearChart";
 import StatisticsForTasks from "../StatisticsForTasks";
 import StatisticsMenu from "../StatisticsMenu";
 import Activity from "../Activity";
@@ -42,6 +43,15 @@ const Statistics = () => {
       content: (
         <div className="flex flex-col gap-10">
           <StatisticsMonthlyChart />
+          <StatisticsForTasks />
+        </div>
+      ),
+    },
+    {
+      key: "year",
+      content: (
+        <div className="flex flex-col gap-10">
+          <StatisticsYearChart />
           <StatisticsForTasks />
         </div>
       ),
