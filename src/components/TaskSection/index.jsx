@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { Link } from "react-router-dom";
+
 import Button from "../Button";
 import Section from "../Section";
 import Separator from "../Separator";
@@ -39,15 +41,25 @@ const TaskSection = () => {
           <h1 className="text-xl text-[var(--accent-primary)] font-semibold">
             TAREFA:
           </h1>
-          <select className="py-2 px-4 rounded-4xl border-2 border-gray-300 text-[var(--fg-light)] font-semibold uppercase">
-            <option>leitura</option>
-            <option>web development</option>
-            <option>game dev</option>
-            <option>japonês</option>
-            <option>italiano</option>
-            <option>meditação</option>
-            <option>workout</option>
-          </select>
+          <div className="w-auto flex gap-4 py-2 px-4 justify-center items-center rounded-4xl border-2 border-gray-300 text-[var(--fg-light)] font-semibold uppercase">
+            <i className="inline-block w-[15px] h-[15px] bg-gray-300 rounded-full"></i>
+            <select className="py-2 border-0 text-[var(--fg-light)] font-semibold uppercase">
+              <option>leitura</option>
+              <option>web development</option>
+              <option>game dev</option>
+              <option>japonês</option>
+              <option>italiano</option>
+              <option>meditação</option>
+              <option>workout</option>
+            </select>
+          </div>
+
+          <Link
+            to="/tags"
+            className="text-sm font-semibold text-[var(--fg-light)] underline uppercase hover:text-[var(--accent-primary)]"
+          >
+            Criar nova tag
+          </Link>
         </div>
 
         <Separator />
