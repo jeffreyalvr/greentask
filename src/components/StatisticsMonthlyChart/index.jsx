@@ -25,7 +25,26 @@ const StatisticsMonthlyChart = () => {
         Atividade do mês
       </span>
 
-      <div className="h-auto w-auto flex items-end gap-10 justify-center">
+      <div className="h-auto w-auto flex gap-15">
+        <div className="w-[300px] flex flex-col gap-5">
+          <div className="flex flex-col gap-2 w-full h-auto px-5 py-4 bg-[var(--bg-color)] rounded-md">
+            <span className="text-[var(--fg-light)] font-semibold">
+              Tempo total dedicado
+            </span>
+            <span className="text-[var(--fg-dark)] font-semibold">317 h</span>
+          </div>
+          <div className="flex flex-col gap-2 w-full h-auto px-5 py-4 bg-[var(--bg-color)] rounded-md">
+            <span className="text-[var(--fg-light)] font-semibold">
+              Ano anterior (2024)
+            </span>
+            <span className="text-[var(--fg-dark)] font-semibold">0 h</span>
+          </div>
+          <div className="flex flex-col gap-2 w-full h-auto px-5 py-4 bg-[var(--bg-color)] rounded-md">
+            <span className="text-[var(--fg-light)] font-semibold">2023</span>
+            <span className="text-[var(--fg-dark)] font-semibold">0 h</span>
+          </div>
+        </div>
+
         <div className="flex gap-5 w-auto h-full flex-wrap">
           {Array.from({ length: daysInMonth }, (_, i) => {
             const currentDay = (i + 1).toString();
