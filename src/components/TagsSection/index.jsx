@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import Section from "../Section";
+import Separator from "../Separator";
 
 const colors = [
   { id: 0, name: "vermelho", hex: "f94144" },
@@ -35,6 +36,7 @@ const TagsSection = () => {
         <span className="pb-4 text-xl text-[var(--fg-light)] font-semibold border-b-2 border-dashed border-b-[var(--border-light)]">
           Criar nova tag
         </span>
+
         <div className="flex flex-col gap-3">
           <span className="text-lg text-[var(--fg-light)] font-semibold">
             Nome
@@ -81,7 +83,7 @@ const TagsSection = () => {
           ) : null}
         </div>
 
-        <div className="inline-block h-2 border-dashed border-b-2 border-[var(--border-light)]"></div>
+        <Separator />
 
         <div className="w-full flex flex-col justify-center items-center gap-2">
           <button className="w-max px-10 py-4 rounded-4xl text-white font-semibold bg-[var(--accent-opaque)] uppercase cursor-pointer hover:bg-[var(--accent-primary)]">

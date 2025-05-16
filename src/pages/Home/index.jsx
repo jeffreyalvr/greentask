@@ -2,6 +2,7 @@ import Sidebar from "../../components/Sidebar";
 import TaskSection from "../../components/TaskSection";
 import Activity from "../../components/Activity";
 import Section from "../../components/Section";
+import Separator from "../../components/Separator";
 
 const Home = () => {
   return (
@@ -9,7 +10,7 @@ const Home = () => {
       <Sidebar />
       <main className="w-full flex flex-col h-fit px-10">
         <TaskSection />
-        <div className="inline-block h-2 border-dashed border-b-2 border-[var(--border-light)]"></div>
+        <Separator />
         <Section title="Atividade de hoje">
           <Activity />
         </Section>

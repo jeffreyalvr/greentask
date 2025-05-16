@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import Button from "../Button";
 import Section from "../Section";
+import Separator from "../Separator";
 
 import close_icon from "../../assets/icons/close.svg";
 import arrow_icon from "../../assets/icons/arrow.svg";
@@ -48,7 +49,8 @@ const TaskSection = () => {
             <option>workout</option>
           </select>
         </div>
-        <div className="inline-block h-2 border-dashed border-b-2 border-[var(--border-light)]"></div>
+
+        <Separator />
 
         <div className="w-auto flex flex-col items-center gap-4">
           <h1 className="flex flex-col items-center text-xl text-[var(--accent-primary)] font-semibold">
@@ -103,7 +105,8 @@ const TaskSection = () => {
           )}
         </div>
 
-        <div className="inline-block h-2 border-dashed border-b-2 border-[var(--border-light)]"></div>
+        <Separator />
+
         <div className="w-full flex flex-col justify-center items-center gap-2">
           <button className="w-max px-10 py-4 rounded-4xl text-white font-semibold bg-[var(--accent-opaque)] uppercase cursor-pointer hover:bg-[var(--accent-primary)]">
             iniciar | {selected}"
