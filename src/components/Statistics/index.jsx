@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 import Section from "../Section";
-import StatisticsDayChart from "../StatisticsDayChart";
 import StatisticsWeeklyChart from "../StatisticsWeeklyChart";
 import StatisticsMonthlyChart from "../StatisticsMonthlyChart";
 import StatisticsForTasks from "../StatisticsForTasks";
 import StatisticsMenu from "../StatisticsMenu";
+import Activity from "../Activity";
 
 const Statistics = () => {
   const [selectedView, setSelectedView] = useState(0);
@@ -19,8 +19,11 @@ const Statistics = () => {
     {
       key: "day",
       content: (
-        <div className="flex gap-10">
-          <StatisticsDayChart />
+        <div className="flex flex-col gap-10">
+          <span className="pb-4 text-xl text-[var(--fg-light)] font-semibold border-b-2 border-dashed border-b-[var(--border-light)]">
+            Atividade de hoje
+          </span>
+          <Activity />
           <StatisticsForTasks />
         </div>
       ),

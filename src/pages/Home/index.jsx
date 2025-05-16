@@ -1,6 +1,7 @@
 import Sidebar from "../../components/Sidebar";
 import TaskSection from "../../components/TaskSection";
 import Activity from "../../components/Activity";
+import Section from "../../components/Section";
 
 const Home = () => {
   return (
@@ -9,7 +10,9 @@ const Home = () => {
       <main className="flex flex-col h-fit px-10">
         <TaskSection />
         <div className="inline-block h-2 border-dashed border-b-2 border-[var(--border-light)]"></div>
-        <Activity />
+        <Section title="Atividade de hoje">
+          <Activity />
+        </Section>
       </main>
     </div>
   );
