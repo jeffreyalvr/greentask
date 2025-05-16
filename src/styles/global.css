@@ -13,6 +13,8 @@
 :root {
   --accent-primary: #52796f;
   --accent-opaque: #84a98c;
+  --accent-secondary: #795252;
+  --accent-secondary-opaque: #a98484;
   --fg-dark: #5b5b5b;
   --fg-light: #838383;
   --fg-subtle: #ababab;
@@ -21,6 +23,9 @@
   --bg-color: #f2f2f2;
   --sidebar-bg: #d9d9d9;
   --activity-item-color: #fff;
+
+  --bg-color-dark: #151515;
+  --sidebar-bg-dark: #1f1f1f;
 }
 
 * {
