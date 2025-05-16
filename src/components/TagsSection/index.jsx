@@ -32,9 +32,12 @@ const TagsSection = () => {
   return (
     <Section title="Minhas tags">
       <div className="flex flex-col gap-10 max-w-[600px] h-auto px-10 py-10 bg-white rounded-2xl">
+        <span className="pb-4 text-xl text-[var(--fg-light)] font-semibold border-b-2 border-dashed border-b-[var(--border-light)]">
+          Criar nova tag
+        </span>
         <div className="flex flex-col gap-3">
           <span className="text-lg text-[var(--fg-light)] font-semibold">
-            Nome da tag
+            Nome
           </span>
           <input
             type="text"
@@ -42,8 +45,6 @@ const TagsSection = () => {
             className="w-full h-auto p-3 bg-[var(--activity-item-color)] border-1 border-[var(--border-light)] rounded-md shadow-md"
           />
         </div>
-
-        <div className="inline-block h-2 border-dashed border-b-2 border-[var(--border-light)]"></div>
 
         <div className="flex flex-col gap-3">
           <span className="text-lg text-[var(--fg-light)] font-semibold">
