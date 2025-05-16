@@ -18,7 +18,7 @@ const StatisticsMenu = ({ selectedView, onSelectView }) => {
   };
 
   return (
-    <div className="flex gap-4 w-full h-auto p-5 mt-15 bg-[var(--sidebar-bg)] rounded-2xl">
+    <div className="flex gap-4 w-full h-auto p-5 mt-15 bg-[var(--sidebar-bg)] rounded-2xl items-center">
       <select
         className="px-7 py-2 h-[40px] rounded-4xl border-0 bg-white text-[var(--fg-light)] font-semibold uppercase"
         onChange={handleYear}
