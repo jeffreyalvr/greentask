@@ -1,7 +1,7 @@
-import Chart from "./Chart";
-import StatisticsItem from "./StatisticsItem";
+import Chart from "@components/Statistics/Chart";
+import StatisticsItem from "@components/Statistics/StatisticsItem";
 
-import alert_icon from "../../assets/icons/alert.svg";
+import alert_icon from "@assets/icons/alert.svg";
 
 const ForTasks = () => {
   // TODO: variável placeholder

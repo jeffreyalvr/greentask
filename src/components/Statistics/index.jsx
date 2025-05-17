@@ -1,13 +1,13 @@
 import { useState } from "react";
 
-import Section from "../Section";
-import Activity from "../Activity";
+import Section from "@components/Section";
+import Activity from "@components/Activity";
 
-import WeeklyChart from "./WeeklyChart";
-import MonthlyChart from "./MonthlyChart";
-import YearChart from "./YearChart";
-import ForTasks from "./ForTasks";
-import StatisticsMenu from "./StatisticsMenu";
+import WeeklyChart from "@components/Statistics/WeeklyChart";
+import MonthlyChart from "@components/Statistics/MonthlyChart";
+import YearChart from "@components/Statistics/YearChart";
+import ForTasks from "@components/Statistics/ForTasks";
+import StatisticsMenu from "@components/Statistics/StatisticsMenu";
 
 const Statistics = () => {
   const [selectedView, setSelectedView] = useState(0);

@@ -1,9 +1,9 @@
 import Footer from "../Footer";
 
-import dashboard_icon from "../../assets/icons/dashboard.svg";
-import history_icon from "../../assets/icons/history.svg";
-import tag_icon from "../../assets/icons/tag.svg";
-import NavLink from "../NavLink";
+import dashboard_icon from "@assets/icons/dashboard.svg";
+import history_icon from "@assets/icons/history.svg";
+import tag_icon from "@assets/icons/tag.svg";
+import NavLink from "@components/NavLink";
 
 const Sidebar = () => {
   return (

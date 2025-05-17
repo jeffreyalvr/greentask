@@ -1,9 +1,9 @@
-import Sidebar from "../../components/Sidebar";
-import Section from "../../components/Section";
-import Separator from "../../components/Separator";
+import Sidebar from "@components/Sidebar";
+import Section from "@components/Section";
+import Separator from "@components/Separator";
 
-import TagsSection from "../../components/Tags/TagsSection";
-import TagsList from "../../components/Tags/TagsList";
+import TagsSection from "@components/Tags/TagsSection";
+import TagsList from "@components/Tags/TagsList";
 
 const Tags = () => {
   return (

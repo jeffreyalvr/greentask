@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import Separator from "../Separator";
+import Separator from "@components/Separator";
 
 const colors = [
   { id: 0, name: "vermelho", hex: "f94144" },

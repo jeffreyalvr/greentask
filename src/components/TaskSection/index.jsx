@@ -2,12 +2,12 @@ import { useState } from "react";
 
 import { Link } from "react-router-dom";
 
-import Button from "../Button";
-import Section from "../Section";
-import Separator from "../Separator";
+import Button from "@components/Button";
+import Section from "@components/Section";
+import Separator from "@components/Separator";
 
-import close_icon from "../../assets/icons/close.svg";
-import arrow_icon from "../../assets/icons/arrow.svg";
+import close_icon from "@assets/icons/close.svg";
+import arrow_icon from "@assets/icons/arrow.svg";
 
 const TaskSection = () => {
   const [timeTableVisible, setTimeTableVisible] = useState(false);

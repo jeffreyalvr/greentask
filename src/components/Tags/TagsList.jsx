@@ -1,8 +1,8 @@
-import Separator from "../Separator";
+import Separator from "@components/Separator";
 
-import edit_icon from "../../assets/icons/edit.svg";
-import trash_icon from "../../assets/icons/trash.svg";
-import clock_icon from "../../assets/icons/clock.svg";
+import edit_icon from "@assets/icons/edit.svg";
+import trash_icon from "@assets/icons/trash.svg";
+import clock_icon from "@assets/icons/clock.svg";
 
 const TagsList = () => {
   return (

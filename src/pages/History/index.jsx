@@ -1,5 +1,5 @@
-import Sidebar from "../../components/Sidebar";
-import Statistics from "../../components/Statistics";
+import Sidebar from "@components/Sidebar";
+import Statistics from "@components/Statistics";
 
 const History = () => {
   return (

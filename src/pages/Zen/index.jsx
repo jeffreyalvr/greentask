@@ -1,5 +1,5 @@
-import Header from "../../components/Header";
-import Separator from "../../components/Separator";
+import Header from "@components/Header";
+import Separator from "@components/Separator";
 
 const Zen = () => {
   return (

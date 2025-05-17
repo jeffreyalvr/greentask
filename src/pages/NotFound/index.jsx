@@ -1,7 +1,8 @@
-import Header from "../../components/Header";
 import { Link } from "react-router-dom";
 
-import alert_icon from "../../assets/icons/alert.svg";
+import Header from "@components/Header";
+
+import alert_icon from "@assets/icons/alert.svg";
 
 const NotFound = () => {
   return (
