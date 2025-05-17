@@ -17,6 +17,7 @@ const router = createBrowserRouter([
   { path: "/history", element: <History /> },
   { path: "/tags", element: <Tags /> },
   { path: "/tags/edit/:id", element: <EditTag /> },
+  { path: "/404", element: <NotFound /> },
   { path: "*", element: <NotFound /> },
 ]);
 
