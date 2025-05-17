@@ -1,12 +1,13 @@
 import { useState } from "react";
 
 import Section from "../Section";
-import StatisticsWeeklyChart from "../StatisticsWeeklyChart";
-import StatisticsMonthlyChart from "../StatisticsMonthlyChart";
-import StatisticsYearChart from "../StatisticsYearChart";
-import StatisticsForTasks from "../StatisticsForTasks";
-import StatisticsMenu from "../StatisticsMenu";
 import Activity from "../Activity";
+
+import WeeklyChart from "./WeeklyChart";
+import MonthlyChart from "./MonthlyChart";
+import YearChart from "./YearChart";
+import ForTasks from "./ForTasks";
+import StatisticsMenu from "./StatisticsMenu";
 
 const Statistics = () => {
   const [selectedView, setSelectedView] = useState(0);
@@ -25,7 +26,7 @@ const Statistics = () => {
             Atividade de hoje
           </span>
           <Activity />
-          <StatisticsForTasks />
+          <ForTasks />
         </div>
       ),
     },
@@ -33,8 +34,8 @@ const Statistics = () => {
       key: "weekly",
       content: (
         <div className="flex gap-10">
-          <StatisticsWeeklyChart />
-          <StatisticsForTasks />
+          <WeeklyChart />
+          <ForTasks />
         </div>
       ),
     },
@@ -42,8 +43,8 @@ const Statistics = () => {
       key: "monthly",
       content: (
         <div className="flex flex-col gap-10">
-          <StatisticsMonthlyChart />
-          <StatisticsForTasks />
+          <MonthlyChart />
+          <ForTasks />
         </div>
       ),
     },
@@ -51,8 +52,8 @@ const Statistics = () => {
       key: "year",
       content: (
         <div className="flex flex-col gap-10">
-          <StatisticsYearChart />
-          <StatisticsForTasks />
+          <YearChart />
+          <ForTasks />
         </div>
       ),
     },

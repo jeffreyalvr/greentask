@@ -8,7 +8,7 @@ const data = [
 
 const COLORS = ["#D8D24D", "#4DB7D8", "#61D84D"];
 
-const StatisticsChart = () => {
+const Chart = () => {
   return (
     <PieChart width={200} height={200}>
       <Pie
@@ -27,4 +27,4 @@ const StatisticsChart = () => {
   );
 };
 
-export default StatisticsChart;
+export default Chart;

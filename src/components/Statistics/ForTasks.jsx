@@ -1,9 +1,9 @@
-import StatisticsChart from "../StatisticsChart";
-import StatisticsItem from "../StatisticsItem";
+import Chart from "./Chart";
+import StatisticsItem from "./StatisticsItem";
 
 import alert_icon from "../../assets/icons/alert.svg";
 
-const StatisticsForTasks = () => {
+const ForTasks = () => {
   // TODO: variável placeholder
   const emptyData = false;
 
@@ -25,7 +25,7 @@ const StatisticsForTasks = () => {
       ) : (
         <div className="flex gap-20 h-auto">
           <div className="inline-block w-[200px] h-[200px] bg-gray-300 rounded-full overflow-clip">
-            <StatisticsChart />
+            <Chart />
           </div>
 
           <div className="grid grid-cols-3 w-full h-full gap-x-15 gap-y-5 auto-rows-min">
@@ -47,4 +47,4 @@ const StatisticsForTasks = () => {
   );
 };
 
-export default StatisticsForTasks;
+export default ForTasks;

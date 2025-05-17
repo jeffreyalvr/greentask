@@ -12,7 +12,7 @@ const maxBarHeight = 250;
 const minBarHeight = 3;
 const maxValue = Math.max(...days.map((d) => d.value));
 
-const StatisticsWeeklyChart = () => {
+const WeeklyChart = () => {
   return (
     <div className="flex flex-col gap-10 w-[650px] h-auto px-10 py-10 bg-white rounded-2xl">
       <span className="pb-4 text-xl text-[var(--fg-light)] font-semibold border-b-2 border-dashed border-b-[var(--border-light)]">
@@ -50,4 +50,4 @@ const StatisticsWeeklyChart = () => {
   );
 };
 
-export default StatisticsWeeklyChart;
+export default WeeklyChart;
