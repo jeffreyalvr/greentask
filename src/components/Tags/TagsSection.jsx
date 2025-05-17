@@ -22,8 +22,14 @@ const colors = [
 ];
 
 const TagsSection = () => {
-  const [selectedColor, setSelectedColor] = useState(null);
   const [addTagBoxVisible, setAddTagBoxVisible] = useState(false);
+  const [tagName, setTagName] = useState("");
+  const [selectedColor, setSelectedColor] = useState(null);
+
+  const handleTagName = (e) => {
+    const value = e.target.value;
+    setTagName(value);
+  };
 
   const selectColor = (value) => {
     if (value === selectedColor) return;
@@ -36,7 +42,8 @@ const TagsSection = () => {
 
   const cancelAddTag = () => {
     toggleAddTagBoxVisibility();
-    // TODO: limpar o state
+    setTagName("");
+    setSelectedColor(null);
   };
 
   return (
@@ -56,6 +63,8 @@ const TagsSection = () => {
               type="text"
               placeholder="Insira um nome aqui..."
               className="w-full h-auto p-3 bg-[var(--activity-item-color)] border-1 border-[var(--border-light)] rounded-md shadow-md"
+              value={tagName}
+              onChange={handleTagName}
             />
           </div>
 
