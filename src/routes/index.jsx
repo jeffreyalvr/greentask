@@ -6,6 +6,7 @@ import Home from "@pages/Home";
 import Zen from "@pages/Zen";
 import History from "@pages/History";
 import Tags from "@pages/Tags";
+import EditTag from "@pages/Tags/Edit";
 import NotFound from "@pages/NotFound";
 
 const router = createBrowserRouter([
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
   { path: "/zen", element: <Zen /> },
   { path: "/history", element: <History /> },
   { path: "/tags", element: <Tags /> },
+  { path: "/tags/edit/:id", element: <EditTag /> },
   { path: "*", element: <NotFound /> },
 ]);
 
