@@ -12,6 +12,7 @@ import arrow_icon from "@assets/icons/arrow.svg";
 const TaskSection = () => {
   const [timeTableVisible, setTimeTableVisible] = useState(false);
   const [selected, setSelected] = useState(5);
+  const [selectedTag, setSelectedTag] = useState(null);
 
   const quickValues = [
     { time: 5 },
@@ -34,6 +35,11 @@ const TaskSection = () => {
     setTimeTableVisible(!timeTableVisible);
   };
 
+  const handleSelectedTag = (e) => {
+    const tag = e.target.value;
+    setSelectedTag(tag);
+  };
+
   return (
     <Section title="Nova tarefa">
       <div className="flex flex-col gap-10 max-w-[600px] h-auto px-10 py-10 bg-white rounded-2xl">
@@ -43,14 +49,22 @@ const TaskSection = () => {
           </h1>
           <div className="w-full flex gap-4 py-2 px-4 justify-center items-center rounded-4xl border-2 border-gray-300 text-[var(--fg-light)] font-semibold uppercase">
             <i className="inline-block w-[15px] h-[15px] bg-gray-300 rounded-full"></i>
-            <select className="w-full py-2 border-0 text-[var(--fg-light)] font-semibold uppercase">
-              <option>leitura</option>
-              <option>web development</option>
-              <option>game dev</option>
-              <option>japonês</option>
-              <option>italiano</option>
-              <option>meditação</option>
-              <option>workout</option>
+            <select
+              className="w-full py-2 border-0 text-[var(--fg-light)] font-semibold uppercase"
+              defaultValue=""
+              value={selectedTag}
+              onChange={handleSelectedTag}
+            >
+              <option value="" disabled>
+                selecione uma tag
+              </option>
+              <option value="leitura">leitura</option>
+              <option value="web-development">web development</option>
+              <option value="game-dev">game dev</option>
+              <option value="japones">japonês</option>
+              <option value="italiano">italiano</option>
+              <option value="meditacao">meditação</option>
+              <option value="workout">workout</option>
             </select>
           </div>
 
