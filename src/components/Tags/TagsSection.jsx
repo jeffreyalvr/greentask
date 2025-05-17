@@ -2,29 +2,14 @@ import { useState } from "react";
 
 import Separator from "@components/Separator";
 
-const colors = [
-  { id: 0, name: "vermelho", hex: "f94144" },
-  { id: 1, name: "azul", hex: "0096c7" },
-  { id: 2, name: "amarelo", hex: "f9c74f" },
-  { id: 3, name: "verde", hex: "588157" },
-  { id: 4, name: "verde musgo", hex: "90be6d" },
-  { id: 5, name: "salmão", hex: "f8ad9d" },
-  { id: 6, name: "roxo", hex: "b892ff" },
-  { id: 7, name: "laranja", hex: "f3722c" },
-  { id: 8, name: "rosa", hex: "ff8fab" },
-  { id: 9, name: "cinza", hex: "a5a5a5" },
-  { id: 10, name: "verde azulado", hex: "3c6e71" },
-  { id: 11, name: "ciano", hex: "70e4ef" },
-  { id: 12, name: "magenta", hex: "b43e8f" },
-  { id: 13, name: "marrom", hex: "9c6644" },
-  { id: 14, name: "bege", hex: "e6ccb2" },
-  { id: 15, name: "preto", hex: "242423" },
-];
-
-const TagsSection = () => {
+const TagsSection = ({ colors, editTagData }) => {
   const [addTagBoxVisible, setAddTagBoxVisible] = useState(false);
-  const [tagName, setTagName] = useState("");
-  const [selectedColor, setSelectedColor] = useState(null);
+  const [tagName, setTagName] = useState(editTagData?.name || "");
+
+  // Usando coalescência nula para evitar valor nulo com id 0
+  const [selectedColor, setSelectedColor] = useState(
+    editTagData?.colorId ?? null
+  );
 
   const handleTagName = (e) => {
     const value = e.target.value;
@@ -48,10 +33,10 @@ const TagsSection = () => {
 
   return (
     <>
-      {addTagBoxVisible ? (
+      {editTagData || addTagBoxVisible ? (
         <div className="flex flex-col gap-10 max-w-[600px] h-auto px-10 py-10 bg-white rounded-2xl">
           <span className="pb-4 text-xl text-[var(--fg-light)] font-semibold border-b-2 border-dashed border-b-[var(--border-light)]">
-            Criar nova tag
+            {editTagData ? `Alterando ${editTagData.name}` : "Criar nova tag"}
           </span>
 
           <div className="flex flex-col gap-3">
