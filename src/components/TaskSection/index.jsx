@@ -41,9 +41,9 @@ const TaskSection = () => {
           <h1 className="text-xl text-[var(--accent-primary)] font-semibold">
             TAREFA:
           </h1>
-          <div className="w-auto flex gap-4 py-2 px-4 justify-center items-center rounded-4xl border-2 border-gray-300 text-[var(--fg-light)] font-semibold uppercase">
+          <div className="w-full flex gap-4 py-2 px-4 justify-center items-center rounded-4xl border-2 border-gray-300 text-[var(--fg-light)] font-semibold uppercase">
             <i className="inline-block w-[15px] h-[15px] bg-gray-300 rounded-full"></i>
-            <select className="py-2 border-0 text-[var(--fg-light)] font-semibold uppercase">
+            <select className="w-full py-2 border-0 text-[var(--fg-light)] font-semibold uppercase">
               <option>leitura</option>
               <option>web development</option>
               <option>game dev</option>
@@ -56,7 +56,7 @@ const TaskSection = () => {
 
           <Link
             to="/tags"
-            className="text-sm font-semibold text-[var(--fg-light)] underline uppercase hover:text-[var(--accent-primary)]"
+            className="font-semibold uppercase border-2 border-[var(--border-light)] rounded-4xl px-3 py-1 text-[var(--accent-opaque)] hover:border-[var(--accent-opaque)]"
           >
             Criar nova tag
           </Link>
