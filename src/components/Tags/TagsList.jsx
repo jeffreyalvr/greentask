@@ -6,15 +6,7 @@ import edit_icon from "@assets/icons/edit.svg";
 import trash_icon from "@assets/icons/trash.svg";
 import clock_icon from "@assets/icons/clock.svg";
 
-const tags = [
-  { id: 0, name: "tag 1" },
-  { id: 1, name: "tag 2" },
-  { id: 2, name: "tag 3" },
-  { id: 3, name: "tag 4" },
-  { id: 4, name: "tag 5" },
-];
-
-const TagsList = () => {
+const TagsList = ({ colors, tags }) => {
   return (
     <div className="flex gap-5 w-full flex-wrap">
       {tags.map((tag) => (
@@ -23,8 +15,14 @@ const TagsList = () => {
           className="flex flex-col gap-2 w-[450px] h-auto px-10 py-5 text-[var(--fg-dark)] font-semibold bg-[var(--activity-item-color)] rounded-md shadow-md"
         >
           <div className="flex gap-3 items-center py-2">
-            <i className="inline-block w-[15px] h-[15px] bg-gray-300 rounded-full"></i>
-            <span className="uppercase">tag 1</span>
+            <i
+              className="inline-block w-[15px] h-[15px] rounded-full"
+              style={{
+                backgroundColor:
+                  "#" + colors.find((c) => c.id === tag.colorId).hex,
+              }}
+            ></i>
+            <span className="uppercase">{tag.name}</span>
           </div>
 
           <Separator />
