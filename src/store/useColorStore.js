@@ -20,9 +20,7 @@ const useColorStore = create((set) => ({
     { id: 15, name: "preto", hexColor: "#242423" },
   ],
   getColorById: (id) => {
-    const color = useColorStore
-      .getState()
-      .colors.find((color) => color.id === id);
+    const color = useColorStore.getState().colors.find((c) => c.id === id);
     return color ? color.hexColor : "#cccccc";
   },
 }));
