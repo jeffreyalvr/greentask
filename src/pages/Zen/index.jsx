@@ -6,13 +6,13 @@ const Zen = () => {
     <>
       <Header />
       <div className="flex flex-col w-full py-30 gap-10 items-center justify-center">
-        <div className="w-[300px] h-[300px] bg-gray-300 rounded-full"></div>
+        <div className="w-[300px] h-[300px] bg-[var(--item-bg)] rounded-full"></div>
 
-        <span className="text-8xl font-semibold text-[var(--fg-light)] dark:text-[var(--fg-dark)]">
+        <span className="text-8xl font-semibold text-[var(--border-dark)]">
           49:31
         </span>
 
-        <div className="w-auto flex gap-3 py-2 px-4 justify-center items-center rounded-4xl border-2 border-gray-300 text-[var(--fg-light)] font-semibold uppercase">
+        <div className="w-auto flex gap-3 py-2 px-4 justify-center items-center rounded-4xl border-2 border-[var(--border-light)] text-[var(--fg-light)] font-semibold uppercase">
           <i className="inline-block w-[15px] h-[15px] bg-gray-300 rounded-full"></i>
           <span>tag 1</span>
         </div>

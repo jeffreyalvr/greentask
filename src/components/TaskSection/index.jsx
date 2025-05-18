@@ -49,12 +49,12 @@ const TaskSection = () => {
 
   return (
     <Section title="Nova tarefa">
-      <div className="flex flex-col gap-10 max-w-[600px] h-auto px-10 py-10 bg-white rounded-2xl">
+      <div className="flex flex-col gap-10 max-w-[600px] h-auto px-10 py-10 bg-[var(--section-bg)] rounded-2xl">
         <div className="w-[500px] flex flex-col justify-center items-center gap-4">
           <h1 className="text-xl text-[var(--accent-primary)] font-semibold">
             TAREFA:
           </h1>
-          <div className="w-full flex gap-4 py-2 px-4 justify-center items-center rounded-4xl border-2 border-gray-300 text-[var(--fg-light)] font-semibold uppercase">
+          <div className="w-full flex gap-4 py-2 px-4 justify-center items-center rounded-4xl border-2 border-[var(--border-light)] text-[var(--fg-light)] font-semibold uppercase">
             {selectedTag ? (
               <i
                 className="inline-block w-[15px] h-[15px] rounded-full"

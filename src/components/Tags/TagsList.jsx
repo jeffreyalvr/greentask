@@ -19,7 +19,7 @@ const TagsList = ({ colors }) => {
         return (
           <div
             key={tag.id}
-            className="flex flex-col gap-2 w-[450px] h-auto px-10 py-5 text-[var(--fg-dark)] font-semibold bg-[var(--activity-item-color)] rounded-md shadow-md"
+            className="flex flex-col gap-2 w-[450px] h-auto px-10 py-5 text-[var(--fg-dark)] font-semibold bg-[var(--item-bg)] rounded-md shadow-md"
           >
             <div className="flex gap-3 items-center py-2">
               <i
@@ -42,7 +42,7 @@ const TagsList = ({ colors }) => {
                 >
                   <i className="w-full h-full flex items-center justify-center border-0">
                     <img
-                      className="w-[24px] h-[24px]"
+                      className="invert-on-dark w-[24px] h-[24px]"
                       src={edit_icon}
                       alt="Editar"
                     />
@@ -55,7 +55,7 @@ const TagsList = ({ colors }) => {
                 >
                   <i className="w-full h-full flex items-center justify-center border-0">
                     <img
-                      className="w-[24px] h-[24px]"
+                      className="invert-on-dark w-[24px] h-[24px]"
                       src={trash_icon}
                       alt="Excluir"
                     />
@@ -66,13 +66,13 @@ const TagsList = ({ colors }) => {
               <div className="flex items-center justify-end gap-3">
                 <i className="w-[24px] h-[24px] flex items-center justify-center border-0">
                   <img
-                    className="w-fit h-fit"
+                    className="invert-on-dark w-fit h-fit"
                     src={clock_icon}
                     title="Quantidade de usos"
                   />
                 </i>
                 <div
-                  className="w-fit px-3 py-1 rounded-sm bg-gray-200 text-[var(--fg-light)]"
+                  className="w-fit px-3 py-1 rounded-sm bg-[var(--border-light)] text-[var(--fg-light)]"
                   title="Quantidade de usos"
                 >
                   {0}

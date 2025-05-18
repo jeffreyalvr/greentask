@@ -36,13 +36,13 @@ const AddTag = ({ colors }) => {
   return (
     <>
       {addTagBoxVisible ? (
-        <div className="flex flex-col gap-10 max-w-[600px] h-auto px-10 py-10 bg-white rounded-2xl">
+        <div className="flex flex-col gap-10 max-w-[600px] h-auto px-10 py-10 bg-[var(--section-bg)] rounded-2xl">
           <div className="w-full h-auto flex gap-3 items-center pb-6 border-b-2 border-dashed border-b-[var(--border-light)]">
             <span className="text-xl text-[var(--fg-dark)] font-semibold">
               Criar tag
             </span>
             {tagName ? (
-              <div className="w-fit flex gap-3 py-2 px-4 justify-center items-center rounded-4xl border-2 border-gray-300 text-[var(--fg-light)] font-semibold">
+              <div className="w-fit flex gap-3 py-2 px-4 justify-center items-center rounded-4xl border-2 border-[var(--border-light)] text-[var(--fg-light)] font-semibold">
                 <i
                   className="inline-block w-[15px] h-[15px] rounded-full"
                   style={{
@@ -63,7 +63,7 @@ const AddTag = ({ colors }) => {
             <input
               type="text"
               placeholder="Insira um nome aqui..."
-              className="w-full h-auto p-3 bg-[var(--activity-item-color)] border-1 border-[var(--border-light)] rounded-md shadow-md"
+              className="w-full h-auto p-3 bg-[var(--item-bg)] border-1 border-[var(--border-light)] rounded-md shadow-md"
               value={tagName}
               onChange={handleTagName}
             />

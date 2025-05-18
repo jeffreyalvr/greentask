@@ -11,7 +11,7 @@ const maxValue = Math.max(...months.map((m) => m.value));
 
 const YearChart = () => {
   return (
-    <div className="flex flex-col gap-10 w-full h-auto px-10 py-10 bg-white rounded-2xl">
+    <div className="flex flex-col gap-10 w-full h-auto px-10 py-10 bg-[var(--section-bg)] rounded-2xl">
       <span className="pb-4 text-xl text-[var(--fg-light)] font-semibold border-b-2 border-dashed border-b-[var(--border-light)]">
         Atividade do ano
       </span>

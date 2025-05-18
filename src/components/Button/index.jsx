@@ -9,7 +9,11 @@ const Button = ({ texto, toggled, image, title, special, onClick }) => {
     >
       {image ? (
         <i className="w-full h-full flex items-center justify-center border-0">
-          <img className="w-[32px] h-[32px]" src={image} alt={texto} />
+          <img
+            className="invert-on-dark w-[32px] h-[32px]"
+            src={image}
+            alt={texto}
+          />
         </i>
       ) : (
         <span className="font-bold text-[var(--fg-light)]">{texto}</span>

@@ -8,7 +8,7 @@ const Signup = () => {
     <>
       <Header />
       <div className="flex flex-col w-full py-30 gap-10 items-center justify-center">
-        <div className="flex flex-col gap-10 w-[450px] h-auto px-10 py-10 bg-white rounded-2xl">
+        <div className="flex flex-col gap-10 w-[450px] h-auto px-10 py-10 bg-[var(--section-bg)] rounded-2xl">
           <span className="pb-4 text-xl text-[var(--fg-light)] font-semibold border-b-2 border-dashed border-b-[var(--border-light)]">
             Cadastro greentask.
           </span>
@@ -21,7 +21,7 @@ const Signup = () => {
             <input
               type="text"
               placeholder="Como você se chama?"
-              className="w-full h-auto p-3 bg-[var(--activity-item-color)] border-1 border-[var(--border-light)] rounded-md shadow-md"
+              className="w-full h-auto p-3 bg-[var(--item-bg)] border-1 border-[var(--border-light)] rounded-md shadow-md"
             />
           </div>
 
@@ -33,7 +33,7 @@ const Signup = () => {
             <input
               type="email"
               placeholder="Digite seu e-mail..."
-              className="w-full h-auto p-3 bg-[var(--activity-item-color)] border-1 border-[var(--border-light)] rounded-md shadow-md"
+              className="w-full h-auto p-3 bg-[var(--item-bg)] border-1 border-[var(--border-light)] rounded-md shadow-md"
             />
           </div>
 
@@ -45,7 +45,7 @@ const Signup = () => {
             <input
               type="password"
               placeholder="Digite uma senha..."
-              className="w-full h-auto p-3 bg-[var(--activity-item-color)] border-1 border-[var(--border-light)] rounded-md shadow-md"
+              className="w-full h-auto p-3 bg-[var(--item-bg)] border-1 border-[var(--border-light)] rounded-md shadow-md"
             />
           </div>
 

@@ -9,7 +9,7 @@ const Footer = () => {
 
   return (
     <footer className="w-full flex flex-col gap-8 py-4 border-dashed border-t-2 border-[var(--border-dark)]">
-      <span>
+      <span className="text-[var(--fg-light)]">
         Feito por{" "}
         <a
           href="https://jeffreyalvr.dev"
@@ -33,7 +33,7 @@ const Footer = () => {
         >
           <i className="w-[24px] h-[24px] flex items-center justify-center border-0">
             <img
-              className="w-fit h-fit"
+              className="invert-on-dark w-fit h-fit"
               src={light_icon}
               title="Ativar tema claro"
               alt="Claro"
@@ -50,7 +50,7 @@ const Footer = () => {
         >
           <i className="w-[24px] h-[24px] flex items-center justify-center border-0">
             <img
-              className="w-fit h-fit"
+              className="invert-on-dark w-fit h-fit"
               src={dark_icon}
               title="Ativar tema escuro"
               alt="Escuro"

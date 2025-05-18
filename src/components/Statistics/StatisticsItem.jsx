@@ -6,7 +6,7 @@ const StatisticsItem = ({ tagColor, tagName, percentage, total_time }) => {
           className="inline-block w-[15px] h-[15px] rounded-full"
           style={{ backgroundColor: tagColor ? tagColor.hexColor : "#cccccc" }}
         ></i>
-        <span className="uppercase">{tagName}</span>
+        <span className="text-[var(--fg-dark)] uppercase">{tagName}</span>
       </div>
       <div className="flex gap-8">
         <span

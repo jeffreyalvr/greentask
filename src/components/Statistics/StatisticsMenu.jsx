@@ -30,7 +30,7 @@ const StatisticsMenu = ({ selectedView, onSelectView }) => {
   return (
     <div className="flex gap-4 w-full h-auto p-5 mt-15 bg-[var(--sidebar-bg)] rounded-2xl items-center">
       <select
-        className="px-7 py-2 h-[40px] rounded-4xl border-0 bg-white text-[var(--fg-light)] font-semibold uppercase"
+        className="px-7 py-2 h-[40px] rounded-4xl border-0 bg-[var(--bg-color)] text-[var(--fg-light)] font-semibold uppercase"
         onChange={handleYear}
         value={year}
       >
@@ -50,7 +50,7 @@ const StatisticsMenu = ({ selectedView, onSelectView }) => {
             className={`w-max px-7 py-2 rounded-4xl font-semibold uppercase cursor-pointer hover:bg-[var(--accent-opaque)] hover:text-white ${
               selectedView === period.id
                 ? "bg-[var(--accent-primary)] text-white"
-                : "bg-white text-[var(--fg-dark)]"
+                : "bg-[var(--bg-color)] text-[var(--fg-dark)]"
             }`}
             key={period.id}
             onClick={() => onSelectView(period.id)}
