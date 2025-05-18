@@ -9,10 +9,17 @@ import Separator from "@components/Separator";
 import close_icon from "@assets/icons/close.svg";
 import arrow_icon from "@assets/icons/arrow.svg";
 
+import useColorStore from "@store/useColorStore";
+import useTagStore from "@store/useTagStore";
+
 const TaskSection = () => {
   const [timeTableVisible, setTimeTableVisible] = useState(false);
   const [selected, setSelected] = useState(5);
   const [selectedTag, setSelectedTag] = useState(null);
+
+  const getColorHex = useColorStore((state) => state.getColorById);
+  const colorHex = getColorHex();
+  const tags = useTagStore((state) => state.tags);
 
   const quickValues = [
     { time: 5 },
@@ -48,7 +55,14 @@ const TaskSection = () => {
             TAREFA:
           </h1>
           <div className="w-full flex gap-4 py-2 px-4 justify-center items-center rounded-4xl border-2 border-gray-300 text-[var(--fg-light)] font-semibold uppercase">
-            <i className="inline-block w-[15px] h-[15px] bg-gray-300 rounded-full"></i>
+            {selectedTag ? (
+              <i
+                className="inline-block w-[15px] h-[15px] rounded-full"
+                style={{
+                  backgroundColor: colorHex,
+                }}
+              ></i>
+            ) : null}
             <select
               className="w-full py-2 border-0 text-[var(--fg-light)] font-semibold uppercase"
               defaultValue=""
@@ -58,13 +72,11 @@ const TaskSection = () => {
               <option value="" disabled>
                 selecione uma tag
               </option>
-              <option value="leitura">leitura</option>
-              <option value="web-development">web development</option>
-              <option value="game-dev">game dev</option>
-              <option value="japones">japonês</option>
-              <option value="italiano">italiano</option>
-              <option value="meditacao">meditação</option>
-              <option value="workout">workout</option>
+              {tags.map((tag) => (
+                <option key={tag.id} value={tag.id}>
+                  {tag.name}
+                </option>
+              ))}
             </select>
           </div>
 
